@@ -1,0 +1,25 @@
+spring:
+ application:
+  name: demo
+  
+ datasource:
+  url: jdbc:oracle:thin:@localhost:1521:FREE
+  username: SYSTEM
+  password: MySecurePass123
+  driver-class-name: oracle.jdbc.OracleDriver
+  hikari:
+   maximum-pool-size: 10
+   connection-timeout: 30000
+   idle-timeout: 600000
+   max-lifetime: 1800000
+   validation-timeout: 5000
+   connection-test-query: SELECT 1 FROM DUAL
+
+ liquibase:
+  change-log: classpath:/db/changelog/db-catalog.xml
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
