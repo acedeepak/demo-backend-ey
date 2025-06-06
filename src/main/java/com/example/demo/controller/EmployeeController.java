@@ -38,7 +38,7 @@ public class EmployeeController {
 	
 	@GetMapping(urlBase + "/getById/{id}")
 	@CrossOrigin
-	public Employee getAllEmployees(@PathVariable Long id)
+	public Employee getAllEmployees(@PathVariable("id") Long id)
 	{
 		return employeeService.getEmployee(id);
 	}
@@ -52,7 +52,7 @@ public class EmployeeController {
 	
 	@DeleteMapping(urlBase + "/deleteEmployee/{id}")
 	@CrossOrigin
-	public void deleteEmployee(@PathVariable Long id)
+	public void deleteEmployee(@PathVariable("id") Long id)
 	{
 		employeeService.deleteEmployee(id);
 	}

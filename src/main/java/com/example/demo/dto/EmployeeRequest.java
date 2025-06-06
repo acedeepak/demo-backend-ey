@@ -3,7 +3,12 @@ package com.example.demo.dto;
 import lombok.*;
 import java.time.LocalDateTime;
 
+import com.example.demo.entity.Band;
+
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class EmployeeRequest {
 
 
