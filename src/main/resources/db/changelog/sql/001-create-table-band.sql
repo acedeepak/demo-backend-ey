@@ -1,0 +1,5 @@
+CREATE TABLE Band (
+    id NUMBER PRIMARY KEY,
+    name VARCHAR2(50) NOT NULL,
+    description VARCHAR2(4000)
+)

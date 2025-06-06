@@ -16,7 +16,7 @@ spring:
    connection-test-query: SELECT 1 FROM DUAL
 
  liquibase:
-  change-log: classpath:/db/changelog/db-catalog.xml
+  change-log: classpath:/db/changelog/db-changelog.xml
 
 management:
   endpoints:
